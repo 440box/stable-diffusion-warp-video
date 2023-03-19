@@ -4,7 +4,7 @@ creates hypnotic moving videos by smoothly walking randomly through the sample s
 
 example way to run this script:
 
-$ python stablediffusionwalk.py --prompt "blueberry spaghetti" --name blueberry
+$ python stablediffusion_warp_video.py --prompt "blueberry spaghetti" --name blueberry
 
 to stitch together the images, e.g.:
 $ ffmpeg -r 10 -f image2 -s 512x512 -i blueberry/frame%06d.jpg -vcodec libx264 -crf 10 -pix_fmt yuv420p blueberry.mp4
